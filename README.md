@@ -40,7 +40,7 @@ If you'd rather serve it:
 python3 -m http.server --directory Web
 ```
 
-It uses the CSS `@property` rule, so it needs a recent browser. I tested it in Chrome.
+It uses the CSS `@property` rule, so it needs a recent browser. Tested in Chrome and in WebKit, the engine behind Safari.
 
 ## Count down to your own date
 - **iOS:** change `release` at the top of `VICountdown/ContentView.swift`.

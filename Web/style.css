@@ -49,7 +49,7 @@ body {
   filter: drop-shadow(0 0 6px #ff2b90);
   opacity: calc(1 - max(var(--p) * 2 - 1, 0));
 }
-.trace #words {
+.trace .letters {       /* a group, so the copies made with <use> keep their own outline */
   stroke: #fff;
   stroke-width: 4;
 }
@@ -76,7 +76,7 @@ body {
   font: 700 13px system-ui, sans-serif;
   letter-spacing: 3px;
   font-variant-numeric: tabular-nums;
-  counter-reset: percent var(--percent);
+  counter-reset: percent calc(var(--percent));   /* calc() rounds it, Safari needs that */
   animation: leave 0.3s 3.2s forwards;
 }
 .loading::after {
