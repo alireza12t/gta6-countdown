@@ -1,0 +1,12 @@
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+.DS_Store
+
+# Not part of the public project: my notes, old stills, and the video renderer
+# (it holds music and sound effects I can't share).
+HISTORY.md
+Stills/
+Video/
